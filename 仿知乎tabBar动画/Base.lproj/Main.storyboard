@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pgp-Ow-Nbv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--奇鱼旅行-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="仿知乎tabBar动画" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="5ks-Qg-7lb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvT-dK-eXK">
+                                <rect key="frame" x="157.5" y="318.5" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.1099363527" green="0.66858240020000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6wQ-Ch-1N0"/>
+                                </constraints>
+                                <state key="normal" title="jump"/>
+                                <connections>
+                                    <action selector="jumpSecondVc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Om7-qa-7Nk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YvT-dK-eXK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8p2-3o-Fqv"/>
+                            <constraint firstAttribute="trailing" secondItem="5ks-Qg-7lb" secondAttribute="trailing" id="Brm-vS-WOk"/>
+                            <constraint firstItem="5ks-Qg-7lb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cr2-tY-GWF"/>
+                            <constraint firstItem="YvT-dK-eXK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GSt-fB-9FN"/>
+                            <constraint firstItem="5ks-Qg-7lb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIS-QS-knS"/>
+                            <constraint firstItem="5ks-Qg-7lb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V2i-hw-wo7"/>
+                            <constraint firstItem="5ks-Qg-7lb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcn-Kk-MZT"/>
+                            <constraint firstAttribute="bottom" secondItem="5ks-Qg-7lb" secondAttribute="bottom" id="uBg-Ah-KDp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="奇鱼旅行" id="RqN-MK-NYi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
+        </scene>
+        <!--奇鱼旅行-->
+        <scene sceneID="gI9-oA-uxN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s0X-xG-Tsj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="奇鱼旅行" image="find" id="2AO-pf-azH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gjt-hc-pIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xrj-lW-J9X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tt8-7j-GXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055.2" y="776.76161919040487"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Xt-R7-cRn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pgp-Ow-Nbv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VP5-Lj-FhS">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="s0X-xG-Tsj" kind="relationship" relationship="viewControllers" id="ls7-iu-NEl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMw-sf-XL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="776.76161919040487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="750" height="1334"/>
+        <image name="find" width="30" height="30"/>
+    </resources>
+</document>
